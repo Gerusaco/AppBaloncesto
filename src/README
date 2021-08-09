@@ -1,0 +1,42 @@
+#PARTE I
+
+Va almacenar la información de las personas que forman un equipo de baloncesto.
+En una primera instanacia tenemos:
+
+- Jugadores
+- Entrenadores
+
+De ambos necesito saber nombre, apellido, fecha de nacimiento y pais.
+De los jugadores además sabremos, su dorsal, posición, año de debut.
+De los entrenadores sabremos si es entrenador principal, años en el club.
+
+
+#PARTE II
+Las estadisticas media de un jugador determina su media de ppp, rpp, app. Para ello necesitaremos guardar esta información
+dentro del jugador. Esto no será un atributo de clase, to do jugador que se cree se hara con todas las estadisticas a 0.
+
+
+#PARTE III
+Creamos la clase Equipo. De los equimos sabremos su nombre, ciudad, titulos ganados, lista de jugadores (por defecto esta lista estará vacía)
+al igual que en estadisticas no es un aitrbuto de clase /instancia.
+
+Creamos un metodo que se llame agregar Jugador, recibirá un jugador y lo agregará a la lista. Debemos de tener en cuenta
+que un equipo no puede estar formado por más de 7 jugadores. Debes de controlar que la lista no sobre pasa ese tamaño.
+
+#PARTE IV (Casa)
+
+1. En el Main crea un equipo.
+2. Asignale 5 jugadores
+3. Crea un metodo que sea mostrarEquipo que dibuje por consola la información del equipo/ jugadores de la siguiente forma:
+
+LA LAKERS | Los Angeles | 52 campeonatos
+
+16 - Gasol - AP
+23 - Lebron - A
+... etc
+
+NOTA: Recuerda para hacer saltos de lineas sobre un string usa \n
+
+EXTRA:
+- Instalar git en tu pc
+- Darte de alta en Github
