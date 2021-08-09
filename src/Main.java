@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        //Entrenador
         Entrenador e= new Entrenador("Sergio","Scariolo","1900-01-01","Italia",true,10);
         //System.out.println(e.toString());
         Jugador j = new Jugador("Pau","Gasol","1981-07-01","España",4,"AP",2000);
