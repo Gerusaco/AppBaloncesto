@@ -18,6 +18,7 @@ public class Equipo {
         this.listaJugadores = new ArrayList<>();
     }
 
+
     public String getNombre() {
         return nombre;
     }
@@ -42,7 +43,7 @@ public class Equipo {
         this.titulos = titulos;
     }
 
-    public ArrayList getListaJugadores() {
+    public ArrayList<Jugador> getListaJugadores() {
         return listaJugadores;
     }
 
@@ -56,7 +57,7 @@ public class Equipo {
         }
     }
 
-    /*TODO 4.1 Crear metodo que muestre la información del equipo. NOTA: Si tienes que cambiar algo de la clase jugador puedes hacerlo*/
+    /*Crear metodo que muestre la información del equipo. NOTA: Si tienes que cambiar algo de la clase jugador puedes hacerlo*/
     @Override
     public String toString() {
         /*return "\nEquipo: " + nombre +

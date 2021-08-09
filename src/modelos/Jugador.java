@@ -9,13 +9,12 @@ public class Jugador extends Persona {
     private Estadistica estadisticas;
 
 
-
     public Jugador(String nombre, String apellido, String fechaNac, String pais, int dorsal, String posicion, int anoDebut) {
         super(nombre, apellido, fechaNac, pais);
         this.dorsal = dorsal;
         this.posicion = posicion;
         this.anoDebut = anoDebut;
-        this.estadisticas = new Estadistica(0,0,0);
+        this.estadisticas = new Estadistica(0, 0, 0);
     }
 
     public int getDorsal() {
@@ -51,19 +50,21 @@ public class Jugador extends Persona {
         this.estadisticas = estadisticas;
     }
 
-    public void setEstadisticasPPP(float nuevosPuntos){
+    public void setEstadisticasPPP(float nuevosPuntos) {
         this.estadisticas.setPpp(nuevosPuntos);
     }
-    public void setEstadisticasRPP(float nuevosRebotes){
+
+    public void setEstadisticasRPP(float nuevosRebotes) {
         this.estadisticas.setRpp(nuevosRebotes);
     }
-    public void setEstadisticasAPP(float nuevosAsistencias){
+
+    public void setEstadisticasAPP(float nuevosAsistencias) {
         this.estadisticas.setApp(nuevosAsistencias);
     }
 
     @Override
     public String mostrarInformacion() {
-       return "";
+        return "";
     }
 
     @Override
@@ -77,5 +78,18 @@ public class Jugador extends Persona {
         return "\n" + dorsal +
                 " | " + getNombre() +
                 " | " + posicion;
+    }
+
+    public class JugadorDTO {
+
+        String nombre;
+        float valorEstadistica;
+
+        public JugadorDTO(String nombre, float valorEstadistica) {
+            this.nombre = nombre;
+            this.valorEstadistica = valorEstadistica;
+        }
+
+
     }
 }
